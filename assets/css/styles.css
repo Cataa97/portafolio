@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    height: 100%;
+    width: 100vw;
+    background-color: var(--body-color);
+    /* background-image: url("/assets/img/background_Mesa\ de\ trabajo\ 1.png"); */
+}
+
+/*==================== VARIABLES ====================*/
+:root {
+    --first-color: #e31b6d;
+    --second-color: hsl(235, 77%, 66%);
+    --first-color-alt: rgb(64, 62, 80);
+    --first-color-lighter: rgb(37, 41, 54);
+    --title-color: #fff;
+    --text-color: #fff;
+    --text-color-light: hsl(var(--hue-color), 8%, 65%);
+    --input-color: #fff;
+    --body-color: #181818;
+    --container-color: #FFF;
+}
+
+
+/*==================== BARRA NAVEGACIÓN ====================*/
+.navbar {
+    background-color: var(--body-color);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+
+}
+
+.navbar__ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+.navbar__lista {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.navbar__texto {
+    font-weight: 600;
+    justify-content: center;
+
+}
+
+.navbar__enlaces {
+    text-decoration: none;
+    padding: 20px 20px;
+    color: var(--text-color);
+    border-radius: 5px;
+
+}
+
+.navbar__enlaces:hover {
+    background-color: var(--first-color-lighter);
+    transition: 0.6s ease-out all;
+
+}
+
+.contenedorlogo {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+/*==================== HOME ====================*/
+
+.contenedor {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25rem;
+
+}
+
+.contenedor__texto {
+    z-index: 1;
+    font-size: 32pt;
+    line-height: 36pt;
+    margin: 0 0 20px 0;
+    pointer-events: none;
+    color: var(--text-color);
+}
+
+.contenedor__texto--destacar {
+    color: var(--first-color);
+}
+
+
+/*==================== ABOUT ME ====================*/
+
+
+
+.contenedor__imagen {
+    border-radius: 8px;
+    width: 30rem;
+    height: 30rem;
+     transition: transform .5s ease;
+
+}
+
+
+.contenedor__imagen:hover {
+    transform: scale(1.5);
+}
+
+html {
+    scroll-behavior: smooth;
+}
