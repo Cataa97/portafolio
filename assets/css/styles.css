@@ -10,6 +10,7 @@ body {
     height: 100%;
     width: 100vw;
     background-color: var(--body-color);
+    overflow-x: hidden;
     /* background-image: url("/assets/img/background_Mesa\ de\ trabajo\ 1.png"); */
 }
 
@@ -82,6 +83,22 @@ body {
 
 }
 
+.contenedor__redes {
+    display: flex;
+    margin-left: 45rem;
+}
+
+.contenedor__redes__social {
+    margin: 10px;
+}
+
+.section__general {
+    height: 1300px;
+}
+
+
+
+
 /*==================== HOME ====================*/
 
 .contenedor {
@@ -109,19 +126,77 @@ body {
 
 /*==================== ABOUT ME ====================*/
 
+.contenedor__info {
+    overflow: hidden;
+    /* position:relative; */
+    width: 90%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
 
+
+
+}
+
+.contenedor__info_div {
+    display: flex;
+    align-items: center;
+    margin-left: 10rem;
+
+
+
+
+
+}
+
+
+
+
+.contenedor__info_div_texto {
+
+    color: var(--text-color);
+    font-size: 35px;
+    margin-top: 50rem;
+    margin-left: 17rem;
+   
+
+
+
+}
+
+
+.contenedor__info_div_texto-parrafo {
+    height: auto;
+    width: 30%;
+    display: inline;
+    color: var(--text-color);
+    font-size: 20px;
+    margin-left: 17rem;
+    text-indent: 50px;
+
+
+}
 
 .contenedor__imagen {
-    border-radius: 8px;
-    width: 30rem;
-    height: 30rem;
-     transition: transform .5s ease;
+
+    /* display: inline-block; */
+    float: right;
+    border-radius: 150px;
+    width: 310px;
+    transition: transform .5s ease;
+    vertical-align: middle;
+    margin-left: 8rem;
+    margin-top: 40rem;
+    
+
 
 }
 
 
 .contenedor__imagen:hover {
-    transform: scale(1.5);
+    transform: scale(1.1);
 }
 
 html {
