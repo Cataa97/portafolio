@@ -1,0 +1,137 @@
+@media (min-width: 640px) and (max-width: 1280px) {
+
+/*==================== ABOUT ME ====================*/
+
+.contenedor__info {
+    display: grid;
+    grid-template-columns:  5fr;
+    grid-template-rows: 5fr;
+    gap: px;
+    grid-template-areas:
+        "text"
+        "img";
+    margin-left: 37%;
+    height: 1000px;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.text {
+    display: grid;
+    grid-template-columns: 1fr 2.1fr 0.4fr;
+    grid-template-rows: 0.7fr 2fr 0.7fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". . ."
+        ". b ."
+        ". . .";
+      
+
+
+}
+
+
+
+.img {
+    display: grid;
+    grid-template-columns: 0.4fr 2.4fr 0.2fr;
+    grid-template-rows: 0.7fr 2fr 0.7fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". . ."
+        ". a ."
+        ". . .";
+    align-items: center;
+}
+
+
+
+
+.contenedor__info_div_texto {
+
+    color: var(--first-color);
+    font-size: 40px;
+    display: flex;
+    align-content: flex-end;
+    align-content: flex-end;
+    margin-right: 20rem;
+   
+ 
+   
+
+}
+
+.contenedor__info_div_texto-parrafo {
+    height:auto;
+    width: 50%;
+    color: var(--text-color);
+    font-size: 20px;
+  
+}
+
+.contenedor__imagen {
+    margin-top: 20px;
+    border-radius: 100px;
+    width: 310px;
+    transition: transform .5s ease;
+    vertical-align: middle;
+    grid-area: a;
+    align-items: center;
+
+
+}
+
+#portfolio{
+
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+     align-items: center;
+
+}
+
+.contenedor__portafolio__img {
+   
+    transition: transform .5s ease;
+    gap: 10px;
+   display: flex;
+   flex-wrap: wrap;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.contenedor__portafolio__titulos {
+    color: var(--first-color);
+    font-size: 20px;
+    text-align: center;
+}
+
+.contenedor__portafolio__parrafos {
+    color: var(--text-color);
+    font-size: 15px;
+    text-align: center;
+
+
+
+
+
+
+}
+
+
+.caja {
+    position: relative;
+    width: 100%;
+    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    
+  
+}
+
+
+
+
+
+}
