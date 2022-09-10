@@ -13,7 +13,7 @@ body {
     overflow-x: hidden;
     background-image: url("/assets/img/stars_Mesa\ de\ trabajo\ 1.png");
     background-repeat: repeat;
-    
+
 }
 
 /*==================== VARIABLES ====================*/
@@ -103,7 +103,7 @@ body {
     align-items: center;
     align-content: center;
     justify-content: center;
-    
+
 }
 
 
@@ -146,43 +146,43 @@ body {
 /*==================== ABOUT ME ====================*/
 
 .contenedor__info {
-    display: grid; 
-    grid-template-columns: 2fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 10px ; 
-    grid-template-areas: 
-      "text img"; 
-      align-items: center;
-      height: 1000px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    grid-template-areas:
+        "text img";
+    align-items: center;
+    height: 1000px;
 }
 
-.text{
-    display: grid; 
-    grid-template-columns: 0.5fr 2.1fr 0.4fr; 
-    grid-template-rows: 0.7fr 1.6fr 0.7fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      ". . ."
-      ". b ."
-      ". . ."; 
+.text {
+    display: grid;
+    grid-template-columns: 0.5fr 2.1fr 0.4fr;
+    grid-template-rows: 0.7fr 1.6fr 0.7fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". . ."
+        ". b ."
+        ". . .";
 
-    
+
 }
 
 
 
-  .img {
-    display: grid; 
-    grid-template-columns: 0.4fr 2.4fr 0.2fr; 
-    grid-template-rows: 0.7fr 1.6fr 0.7fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      ". . ."
-      ". a ."
-      ". . ."; 
-      align-items: center;
-  }
- 
+.img {
+    display: grid;
+    grid-template-columns: 0.4fr 2.4fr 0.2fr;
+    grid-template-rows: 0.7fr 1.6fr 0.7fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". . ."
+        ". a ."
+        ". . .";
+    align-items: center;
+}
+
 
 
 .contenedor__info_div {
@@ -194,7 +194,7 @@ body {
 .contenedor__info_div_texto {
 
     color: var(--first-color);
-    font-size: 40px;
+    font-size: 30px;
     /* margin-top: 50rem;
     margin-left: 17rem; */
     grid-area: b;
@@ -223,7 +223,7 @@ body {
     vertical-align: middle;
     grid-area: a;
     align-items: center;
-   
+
 
 }
 
@@ -236,6 +236,48 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
+
+.mouse__transition::before {
+    transform: scaleX(0);
+    transform-origin: left;
+   
+
+}
+
+.mouse__transition:hover::before {
+    transform: scaleX(.6);
+    transform-origin: bottom left;
+}
+
+
+.mouse__transition::before{
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    inset: 0 0 0 0;
+    background: var(--text-color);
+    /* opacity: 50%; */
+    z-index: -1;
+    transition: transform .5s ease;
+ 
+}
+
+.mouse__transition {
+    position: relative;
+  
+    font-size: 3rem;
+}
+
+.logo__size{
+    width: 50px;
+    height: 50px;
+}
 
 /*==================== CONTACT ====================*/
 
@@ -276,7 +318,7 @@ html {
     grid-template-rows: 5fr;
     grid-template-areas:
         "contact"
-        "contact" ;
+        "contact";
     grid-gap: 20px;
     margin-left: 400px;
     align-items: center;
@@ -308,22 +350,22 @@ html {
     height: 300px;
     transition: transform .5s ease;
     vertical-align: middle;
-    
+
     align-items: center;
 }
-   
 
-.contenedor__portafolio__img:hover{
+
+.contenedor__portafolio__img:hover {
     transform: scale(1.1);
 }
 
-.contenedor__portafolio__titulos{
-    color:var(--first-color);
+.contenedor__portafolio__titulos {
+    color: var(--first-color);
     font-size: 20px;
     text-align: center;
 }
 
-.contenedor__portafolio__parrafos{
+.contenedor__portafolio__parrafos {
     color: var(--text-color);
     font-size: 15px;
     text-align: center;
@@ -339,8 +381,8 @@ html {
 
 .caja__form {
     position: relative;
-   
-   
+
+
 }
 
 .caja__form__row {
@@ -370,7 +412,7 @@ html {
 
 }
 
-.caja__message{
+.caja__message {
     resize: none;
     width: 50rem;
 
