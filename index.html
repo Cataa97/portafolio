@@ -16,7 +16,7 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
-    <script></script>
+    
     <title>Portafolio Catalina Castillo</title>
   </head>
   <body>
@@ -34,16 +34,16 @@
 
         <ul class="navbar__ul">
           <li class="navbar__lista">
-            <a class="navbar__enlaces navbar__texto" href="#">Home</a>
+            <a class="navbar__enlaces navbar__texto" href="./index.html">Home</a>
           </li>
           <li class="navbar__lista">
             <a class="navbar__enlaces navbar__texto" href="#about">About</a>
           </li>
           <li class="navbar__lista">
-            <a class="navbar__enlaces navbar__texto" href="#">Portfolio</a>
+            <a class="navbar__enlaces navbar__texto" href="#portfolio">Portfolio</a>
           </li>
           <li class="navbar__lista">
-            <a class="navbar__enlaces navbar__texto" href="#">Contact</a>
+            <a class="navbar__enlaces navbar__texto" href="#contact">Contact</a>
           </li>
         </ul>
 
@@ -106,8 +106,8 @@
         </div>
       </nav>
     </header>
-
-    <section class="contenedor section__hero">
+   
+    <section class="contenedor" >
       <div class="text-wrapper" >
         <h1 class="contenedor__texto contenedor__texto__h1 ml6">
           Hola, Soy
@@ -117,10 +117,11 @@
         </h1>
       </div>
     </section>
+  
 
     <br />
 
-    <section class="contenedor__info section__general">
+    <section id="about" class="contenedor__info section__general">
       <div class="contenedor_info_div">
         <h2 class="contenedor__info_div_texto">Desarrollador Full-stack</h2>
         <p class="contenedor__info_div_texto-parrafo">
@@ -128,34 +129,95 @@
         </p>
       </div>
         <div class="contenedor_info_div">
-          <img class="contenedor__imagen" src="./assets/img/perfil.png" />
+          <img   class="contenedor__imagen" src="./assets/img/perfil.png" />
         </div>
-      </div>
-    </section>
-
-
-    <div id="about">
-
-    </div>
-
-    <div>
       
-    </div>
-
-
-    <section class="contenedor__info section__general">
-      <div class="contenedor_info_div">
-        <h2 class="contenedor__info_div_texto">Desarrollador Full-stack</h2>
-        <p class="contenedor__info_div_texto-parrafo">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, necessitatibus?
-        </p>
-      </div>
-        <div class="contenedor_info_div">
-          <img class="contenedor__imagen" src="" />
-        </div>
-      </div>
     </section>
 
+<section id="portfolio" class="contenedor">
+    <div >
+      <div class="contentedor_portafolio">
+        <img  class="contenedor__portafolio__img" src="./assets/img/marvel.png" alt="marvel">
+        <h4 class="contenedor__portafolio__titulos">Marvel Eternals</h4>
+        <p class="contenedor__portafolio__parrafos">Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div>
+      <div class="content_potafolio">
+        <img class="contenedor__portafolio__img" src="./assets/img/larnu.png" alt="larnu">
+        <h4 class="contenedor__portafolio__titulos">Larnu Login</h4>
+        <p class="contenedor__portafolio__parrafos">Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div>
+      <div class="content">
+        <img class="contenedor__portafolio__img" src="./assets/img/larnuhome.png" alt="LarnuLog" >
+        <h4 class="contenedor__portafolio__titulos">LarnU Login</h4>
+        <p class="contenedor__portafolio__parrafos">Lorem ipsum dolor..</p>
+      </div>
+    </div>
+  </section>
+    
+
+
+
+
+    <section id="contact" class="section__general" >
+      <div class="contenedor__contact">
+          <div class="contenedor__titulo">
+            <h2 class="contenedor__titulo__texto">Hablémos!</h2>
+          </div>
+          <div class="caja">
+              <div class="caja__contact contenedor__principal"> 
+                  
+                  <form>
+                      <div class="caja__form">
+                          <div class="caja__form__row">
+                              <div class="caja__input">
+                              <span class="caja__input__text" >
+                                  Nombre
+                              </span>
+                              <input class="caja__input__celdas" type="text" placeholder="Tu nombre aquí">
+                          </div>
+                          <div class="caja__input">
+                              <span class="caja__input__text" >
+                                  Apellido
+                              </span>
+                              <input class="caja__input__celdas" type="text" placeholder="Tu Apellido aquí">
+                          </div>
+                          </div>
+                          <div class="caja__form__row">
+                              <div class="caja__input">
+                              <span class="caja__input__text" >
+                                  Email
+                              </span>
+                              <input class="caja__input__celdas" type="text" placeholder="tuemail@email.com">
+                          </div>
+                          <div class="caja__input">
+                              <span class="caja__input__text" >
+                                  Teléfono
+                              </span>
+                              <input class="caja__input__celdas" type="text" placeholder="+569 0000000">
+                          </div>
+                          </div>
+                          <br>
+                          <div class="caja__form__row-100">
+                              <div class="caja__input">
+                              <span class="caja__input__text" >
+                                  Mensaje
+                              </span>
+                              <textarea class="caja__input__celdas caja__message "  placeholder="Escríbe tu mensaje"  ></textarea>
+                          </div>
+                      </div>
+                          <div class="caja__form__row-100">
+                              <div class="caja__input">
+                            <input  type="submit" value="Send">
+                          </div>
+                              </div>
+                             </form>
+              </div>
+          </div>
+      </section>
 
 
 
