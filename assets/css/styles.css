@@ -11,7 +11,9 @@ body {
     width: 100vw;
     background-color: var(--body-color);
     overflow-x: hidden;
-    /* background-image: url("/assets/img/background_Mesa\ de\ trabajo\ 1.png"); */
+    /* background-image: url("/assets/img/stars_Mesa\ de\ trabajo\ 1.png");
+    background-repeat: no-repeat;
+     */
 }
 
 /*==================== VARIABLES ====================*/
@@ -40,7 +42,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: transparent;
+    
 
 }
 
@@ -107,6 +109,7 @@ body {
     flex-direction: column;
     justify-content: center;
     margin-top: 25rem;
+   
 
 }
 
@@ -117,11 +120,34 @@ body {
     margin: 0 0 20px 0;
     pointer-events: none;
     color: var(--text-color);
+    
 }
 
 .contenedor__texto--destacar {
     color: var(--first-color);
 }
+
+/* ANIMACIÓN */
+
+.ml6 {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.3em;
+  }
+  
+  .ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
 
 
 /*==================== ABOUT ME ====================*/
@@ -135,19 +161,16 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: flex;
-
-
-
+    
+   
 }
 
 .contenedor__info_div {
     display: flex;
     align-items: center;
     margin-left: 10rem;
-
-
-
-
+    
+   
 
 }
 
@@ -156,10 +179,11 @@ body {
 
 .contenedor__info_div_texto {
 
-    color: var(--text-color);
-    font-size: 35px;
+    color: var(--first-color);
+    font-size: 40px;
     margin-top: 50rem;
     margin-left: 17rem;
+   
    
 
 
@@ -175,6 +199,7 @@ body {
     font-size: 20px;
     margin-left: 17rem;
     text-indent: 50px;
+    word-break: keep-all;
 
 
 }
@@ -183,7 +208,7 @@ body {
 
     /* display: inline-block; */
     float: right;
-    border-radius: 150px;
+    border-radius: 100px;
     width: 310px;
     transition: transform .5s ease;
     vertical-align: middle;
