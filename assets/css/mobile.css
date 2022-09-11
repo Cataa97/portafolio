@@ -1,7 +1,250 @@
 @media (max-width: 640px) {
 
 
+    /*====================BARRA NAVEGACIÓN====================*/ 
+    .navbar {
+        background-color: var(--body-color);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        padding: 10px 100px;
+        display: flex;
+        z-index: 200;
 
+
+    }
+
+    .navbar__ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* margin-left: 5rem; */
+    }
+
+    .navbar__lista {
+        flex-direction: column;
+        list-style: none;
+        /* margin-left: 20px; */
+    }
+
+    .navbar__texto {
+        font-weight: 600;
+        justify-content: center;
+
+    }
+
+    .navbar__enlaces {
+        text-decoration: none;
+        padding: 5px 5px;
+        color: var(--text-color);
+        border-radius: 5px;
+
+    }
+    .contenedor__redes {
+        display: flex;
+        flex-direction: column;
+        margin-left:1rem;
+    }
+    
+    .contenedor__redes__social {
+        margin: 10px;
+
+
+    }
+   
+
+ /*==================== ABOUT ME ====================*/
+
+ .contenedor__info {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px;
+    grid-template-areas:
+        "text"
+        "img";
+    max-height: 800px;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.text {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "b";
+        max-width: 100%;
+}
+
+
+
+.img {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "a";
+    align-items: center;
+
+}
+
+
+.contenedor__info_div_texto {
+
+    color: var(--first-color);
+    font-size: 40px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10rem;
+
+}
+
+.contenedor__info_div_texto-parrafo {
+    color: var(--text-color);
+    font-size: 20px;
+    display: flex;
+    margin-right: 8rem;
+    max-width: 100%;
+
+}
+
+.contenedor__imagen {
+    margin-top: 20px;
+    border-radius: 100px;
+    max-width: 310px;
+    transition: transform .5s ease;
+    vertical-align: middle;
+    grid-area: a;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-right: 5rem;
+    margin-bottom: 20rem;
+
+}
+
+#portfolio {
+
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+
+
+.contenedor__portafolio__img {
+
+    transition: transform .5s ease;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.contenedor__portafolio__titulos {
+    color: var(--first-color);
+    font-size: 20px;
+    text-align: center;
 
     
+}
+
+.contenedor__portafolio__parrafos {
+    color: var(--text-color);
+    font-size: 15px;
+    text-align: center;
+
+
+
+
+
+}
+
+.contenedor__texto {
+    font-size: 25pt;
+    line-height: 30pt;
+    pointer-events: none;
+    color: var(--text-color);
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+
+
+.contenedor__principal {
+    margin-top: 10rem; 
+    background-color: var(--first-color);
+    border-radius: 4px;
+    border-color: var(--first-color);
+    width: 100%;
+    margin-top: 0;
+  }
+
+
+  
+.contenedor__contact {
+    margin-top: 10rem;
+    justify-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 10rem;
+}
+.caja__form {
+    position: relative;
+    width: 100%;
+    padding-top: 5rem;
+    display: block;
+    position: relative;
+    max-width: 100%;
+}
+
+
+.caja__form__row {
+    display: flex;
+    gap: 20px;
+}
+
+.caja__input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    max-width: 50%;
+}
+
+.caja__input__text {
+    color: var(--body-color);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.caja__input__celdas {
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid black;
+    background-color: #181818;
+
+}
+
+.caja__message {
+    resize: none;
+    width: 50rem;
+
+}
+
 }
