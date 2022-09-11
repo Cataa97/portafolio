@@ -315,6 +315,7 @@ html {
     background-color: var(--first-color);
     border-radius: 4px;
     border-color: var(--first-color);
+   
 }
 
 
@@ -342,8 +343,8 @@ html {
 .caja {
     position: relative;
     display: grid;
-    grid-template-columns:  1fr;
-    grid-template-rows: 5fr;
+    grid-template-columns:  2fr;
+    grid-template-rows: 1fr;
     grid-template-areas:
         "contact "
         "contact";
@@ -352,12 +353,13 @@ html {
     justify-content: center;
     justify-items: center;
     margin-bottom: 10rem;
+   
 }
 
 
 .caja__contact {
     grid-area: contact;
-
+    
 }
 
 .caja__contact-destacado {
